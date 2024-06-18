@@ -1,7 +1,7 @@
 using MySqlConnector;
 using System.Data;
 using System.Text;
-
+//n
 namespace _6demayo
 {
     public partial class Form1 : Form
@@ -160,7 +160,7 @@ namespace _6demayo
                         string[] origenParts = parts[0].Split(',');
                         string[] destinoParts = parts[1].Split(',');
                         messageBuilder.AppendLine($"Color origen ({origenParts[0]}, {origenParts[1]}, {origenParts[2]}) " +
-                                                  $"se convirtió en ({destinoParts[0]}, {destinoParts[1]}, {destinoParts[2]}) " +
+                                                  $"se convirtiÃ³ en ({destinoParts[0]}, {destinoParts[1]}, {destinoParts[2]}) " +
                                                   $"encontrado {colorCount.Value} veces.");
                     }
                 }
@@ -184,7 +184,7 @@ namespace _6demayo
             {
                 if (conexionBD != null && conexionBD.State == ConnectionState.Open)
                 {
-                    MessageBox.Show("La conexión fue exitosa.");
+                    MessageBox.Show("La conexiÃ³n fue exitosa.");
                     var adapter = new MySqlDataAdapter("SELECT * FROM textura", conexionBD);
                     var dataTable = new DataTable();
                     adapter.Fill(dataTable);
@@ -192,7 +192,7 @@ namespace _6demayo
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo abrir la conexión a la base de datos.");
+                    MessageBox.Show("No se pudo abrir la conexiÃ³n a la base de datos.");
                 }
             }
         }
